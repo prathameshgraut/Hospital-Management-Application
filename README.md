@@ -59,7 +59,5 @@ Run As → Spring Boot App
 
 The application will run on:
 
-```text
-http://localhost:8080
-```
+http://localhost:8080/
 
