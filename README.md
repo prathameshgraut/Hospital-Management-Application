@@ -27,9 +27,7 @@ Hospital Management Application is a Java-based project used to manage hospital-
 
 Copy the GitHub repository URL.
 
-```bash
-git clone https://github.com/USERNAME/Hospital-Management-Application.git
-```
+https://github.com/prathameshgraut/Hospital-Management-Application.git
 
 ### Step 2: Open Project
 
