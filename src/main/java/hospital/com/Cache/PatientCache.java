@@ -41,7 +41,6 @@ public class PatientCache {
 	@PostConstruct
 	public void loadPatient() {
 		List<Patient> patientList = patientRepository.findAll();
-	
 		for(Patient p : patientList) {
 			m.put(p.getId(), p);
 		}
