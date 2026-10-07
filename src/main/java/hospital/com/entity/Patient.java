@@ -75,7 +75,6 @@ public class Patient {
      // Parameterized constructor used when creating a new patient                                                                                                                      
      // (id, createdAt, and updatedAt are excluded because they are handled automatically)
 	 public Patient(String name, int age, int weight, String phone, String email, String address) {
-		super();
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
