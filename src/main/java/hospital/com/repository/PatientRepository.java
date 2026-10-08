@@ -21,6 +21,12 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
     // Check if a phone number is already registered
     boolean existsByPhone(String phone);
 
+    // Find a patient by their unique Aadhaar number
+    Optional<Patient> findByAadharNumber(String aadharNumber);
+
+    // Check if an Aadhaar number is already registered
+    boolean existsByAadharNumber(String aadharNumber);
+
     // Search patients by name (case-insensitive search, e.g., "john" matches "John Doe")
     List<Patient> findByNameContainingIgnoreCase(String name);
 }
