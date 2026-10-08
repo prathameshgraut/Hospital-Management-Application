@@ -48,6 +48,7 @@ Optional<Patient> patient = patientRepository.findById(id);
     	existingPatient.setPhone(patient.getPhone());
     	existingPatient.setAddress(patient.getAddress());
     	existingPatient.setWeight(patient.getWeight());
+    	existingPatient.setAadharNumber(patient.getAadharNumber());
     	
 
     	return patientRepository.save(existingPatient);
