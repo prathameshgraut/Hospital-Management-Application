@@ -20,6 +20,12 @@ public class PatientController {
 	@Autowired
 	PatientService patientService;
 	
+	
+	
+	public PatientController(PatientService patientService) {
+		
+		this.patientService = patientService;
+	}
 	@PostMapping("addPatient")
 	public Patient addPatient( @RequestBody  Patient patient) {
 		return patientService.addPatient(patient);
