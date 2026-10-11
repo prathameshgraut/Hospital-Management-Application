@@ -44,6 +44,10 @@ public class Patient {
 	 @Column(nullable = false, unique = true)
 	 private String email;
 	 
+	 // Aadhaar number (12-digit unique identity number stored as String)
+	 @Column(name = "aadhar_number", nullable = false, unique = true, length = 12)
+	 private String aadharNumber;
+	 
 	 // Address field using TEXT type to allow longer text entries
 	 @Column(nullable = false, columnDefinition = "TEXT")
 	 private String address = "";
@@ -74,12 +78,13 @@ public class Patient {
 
      // Parameterized constructor used when creating a new patient                                                                                                                      
      // (id, createdAt, and updatedAt are excluded because they are handled automatically)
-	 public Patient(String name, int age, int weight, String phone, String email, String address) {
+	 public Patient(String name, int age, int weight, String phone, String email, String aadharNumber, String address) {
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
 		this.phone = phone;
 		this.email = email;
+		this.aadharNumber = aadharNumber;
 		this.address = address;
 	 }
 	 
@@ -136,6 +141,14 @@ public class Patient {
 
 	 public void setAddress(String address) {
 		 this.address = address;
+	 }
+
+	 public String getAadharNumber() {
+		 return aadharNumber;
+	 }
+
+	 public void setAadharNumber(String aadharNumber) {
+		 this.aadharNumber = aadharNumber;
 	 }
 
 	 // Read-only getter for creation timestamp
