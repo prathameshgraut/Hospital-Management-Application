@@ -47,6 +47,33 @@ public class PatientCache {
 	}
 	
 	
+	//Retrive All Record 
+	public Map<Long, Patient> getAllPatient() {
+	    return m;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }
