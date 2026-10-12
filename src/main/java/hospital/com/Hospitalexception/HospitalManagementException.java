@@ -22,6 +22,12 @@ public class HospitalManagementException extends RuntimeException {
 	 */
 
 	public HospitalManagementException(String resourceName, String fieldName, Object fieldValue) {
+		
+
+        super(resourceName + " not found with "
+                + fieldName + " : " + fieldValue);
+        
+        
 		this.resourceName = resourceName;
 		this.fieldName = fieldName;
 		this.fieldValue = fieldValue;
@@ -31,7 +37,7 @@ public class HospitalManagementException extends RuntimeException {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-
+	
 	public String getResourceName() {
 		return resourceName;
 	}
