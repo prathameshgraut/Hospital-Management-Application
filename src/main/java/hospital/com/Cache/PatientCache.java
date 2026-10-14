@@ -55,25 +55,13 @@ public class PatientCache {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
+	/*
+	 * Find Patient Adhar Number
+	 * if they are adhar exit then retrive adhar
+	 * Retirve Ahar Number In cache
+	 * */
+	//check Adhar 
+	public boolean checkAdhar(long adhar) {
+		return m.containsKey(adhar);
+	}	
 }
